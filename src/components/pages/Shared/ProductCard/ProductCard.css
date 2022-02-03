@@ -1,0 +1,49 @@
+.card {
+  padding: 1.5rem;
+  background-color: transparent;
+  border: 0;
+  margin-bottom: 1rem;
+}
+
+.product-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 280px;
+  background-color: #606f49;
+  padding: 0.5rem;
+  padding-top: 6rem;
+  border-radius: 1rem;
+  color: #fff;
+}
+
+.product-title {
+  max-height: 3.6rem;
+  margin-bottom: 0.4rem;
+  overflow: hidden;
+}
+
+.product-desc {
+  opacity: 0.8;
+  padding: 0 0.6rem;
+  font-size: 0.9rem;
+  max-height: 3rem;
+  overflow: hidden;
+}
+
+.card img {
+  margin-bottom: -6rem;
+  z-index: 2;
+  border-top-left-radius: 15% ;
+  border-top-right-radius: 15% ;
+  
+}
+
+.card:nth-child(even) .product-detail {
+  background-color: #a68a64;
+  color: #000000;
+}
+.card:nth-child(even) button {
+  border-color: #20544a;
+  color: #e9f5db !important;
+}

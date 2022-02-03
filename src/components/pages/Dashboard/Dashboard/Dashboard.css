@@ -1,0 +1,139 @@
+.dashboard {
+  width: 100%;
+  height: 100vh;
+  background-color: #f8f9fa;
+  display: flex;
+  text-align: left;
+}
+
+.dashboard-side {
+  width: 280px;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.side-nav {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: sticky;
+  padding: 0.5rem 1rem 0 0;
+  top: 0;
+  font-weight: 600;
+}
+.side-nav .logo {
+  margin-top: 20px;
+  width: 100%;
+  height: 4rem;
+  background-color: #508368;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.side-nav li {
+  list-style: none;
+  color: #333;
+  display: block;
+  padding: 1rem 0.6rem;
+  border-radius: 0.6rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+}
+.side-nav ul {
+  padding: 0;
+}
+
+.side-nav li a {
+  display: block;
+}
+
+.active-nav > li {
+  background-color: #fff;
+  box-shadow: 0 0.25rem 0.375rem -0.0625rem hsla(0, 0%, 8%, 0.12), 0 0.125rem 0.25rem -0.0625rem hsla(0, 0%, 8%, 0.07);
+}
+.side-nav li:hover {
+  background-color: #fff;
+  box-shadow: 0 0.25rem 0.375rem -0.0625rem hsla(0, 0%, 8%, 0.12), 0 0.125rem 0.25rem -0.0625rem hsla(0, 0%, 8%, 0.07);
+}
+
+.side-nav i {
+  background-color: #fff;
+  padding: 8px 10px;
+  margin-right: 10px;
+  border-radius: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  box-shadow: 0 0.25rem 0.375rem -0.0625rem hsla(0, 0%, 8%, 0.12), 0 0.125rem 0.25rem -0.0625rem hsla(0, 0%, 8%, 0.07);
+}
+
+.side-nav a:hover {
+  color: #000;
+}
+
+.dashboard-main {
+  width: calc(100% - 280px);
+  height: 100%;
+  padding: 0.7rem;
+  padding-top: 0.6rem;
+  overflow-y: auto;
+}
+
+.dashboard-top {
+  display: flex;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  justify-content: center;
+  box-shadow: inset 0 0 1px 1px hsla(0, 0%, 100%, 0.9), 0 20px 27px 0 rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  border-radius: 0.8rem;
+  padding: 0.5rem;
+  justify-content: space-between;
+}
+.dashboard-top h1 {
+  display: inline-block;
+}
+
+.dashboard-content {
+  padding: 0.7rem 0;
+}
+
+.paper {
+  background-color: #fff;
+  box-shadow: 0 0.25rem 0.375rem -0.0625rem hsla(0, 0%, 8%, 0.12), 0 0.125rem 0.25rem -0.0625rem hsla(0, 0%, 8%, 0.07);
+  border-radius: 0.6rem;
+  padding: 0.7rem;
+}
+
+.order-img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.4rem;
+  margin: 0 0.4rem;
+  box-shadow: inset 0 0 1px 1px hsla(0, 0%, 100%, 0.9), 0 20px 27px 0 rgba(0, 0, 0, 0.05);
+}
+
+th {
+  font-size: 0.8rem !important;
+  color: #444;
+  vertical-align: bottom;
+}
+td {
+  font-size: 0.75rem;
+  color: #333;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 992px) {
+  .dashboard-side {
+    width: 5.1rem;
+  }
+  .dashboard-main {
+    width: calc(100% - 5rem);
+  }
+  .side-nav li span {
+    display: none;
+  }
+  .logo {
+    object-fit: cover;
+    object-position: left;
+  }
+}

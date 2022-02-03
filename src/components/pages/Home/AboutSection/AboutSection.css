@@ -1,0 +1,19 @@
+.about-left {
+  height: 500px;
+  width: 90%;
+  border-radius: 1rem;
+}
+.about-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 500px;
+}
+
+.about-left img {
+  object-fit: cover;
+  object-position: right;
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+}

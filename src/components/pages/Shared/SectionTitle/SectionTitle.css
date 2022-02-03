@@ -1,0 +1,12 @@
+.section-title {
+  margin: 0 auto;
+  padding: 5rem 0 4rem;
+  max-width: 600px;
+}
+
+.section-title h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-family: "Kaushan Script", cursive;
+}

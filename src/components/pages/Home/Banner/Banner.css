@@ -1,0 +1,102 @@
+.banner {
+  background: linear-gradient(90deg, #ade0d6, #dde0c0);
+  width: 100%;
+  height: calc(100vh);
+  margin-top: -4rem;
+}
+.banner-left {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.banner-right {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.banner-title {
+  z-index: 10;
+  color: #fff;
+  text-align: left;
+  /* font-weight: bold; */
+  font-size: 3.8rem;
+  font-family: "Kaushan Script", cursive;
+  /* font-family: 'Rozha One', serif; */
+}
+
+.bg-wrapper {
+  position: absolute;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 100%;
+  height: 70vh;
+  box-shadow: 0 0 10px 5px #33333355;
+}
+
+.bg-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+  border-radius: 2rem;
+  /* border-radius: 1.2rem; */
+}
+
+@media screen and (max-width: 992px) {
+  .banner-left {
+    height: 58vh;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  .banner-title {
+    padding-top: 4rem;
+    font-size: 3.5rem;
+  }
+
+  .banner-right {
+    position: relative;
+    height: 42vh;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .bg-wrapper {
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 60%;
+    height: auto;
+    box-shadow: 0 0 10px 5px #33333355;
+  }
+  .bg-wrapper img {
+    width: 100%;
+    height: auto;
+    object-position: right;
+    border-radius: 2rem;
+    /* border-radius: 1.2rem; */
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .bg-wrapper {
+    width: 90%;
+    height: auto;
+  }
+  .banner-left {
+    height: 56vh;
+    align-items: flex-end;
+    padding-top: 4rem;
+  }
+  .banner-right {
+    height: 45vh;
+  }
+  .banner-title {
+    padding-top: 4rem;
+    font-size: 3.4rem;
+  }
+}

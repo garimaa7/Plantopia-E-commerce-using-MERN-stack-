@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Rozha+One&display=swap");
+
+.App {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #477752;
+}
+
+hr {
+  z-index: 1;
+}
+
+body {
+  background-color: #ffffff;
+}
+.logo {
+  height: 2rem;
+}
+
+.btn-green {
+  background-color: #68a175;
+  color: #fff;
+  border: 1px solid #51885d;
+}
+
+.btn-cursive {
+  font-family: "Kaushan Script", cursive;
+  font-weight: bold;
+}
+.text-cursive {
+  font-family: "Kaushan Script", cursive;
+  font-weight: bold;
+}
+.bg-green {
+  background-color: #bddfc4;
+  color: #fff;
+}
+.bg-gr {
+  background: linear-gradient(90deg, #cce6e0, #d5f1c5);
+  color: #fff;
+}
+.bg-warning {
+  background-color: #ecd5a1c9 !important;
+  color: #134f29;
+}
+
+.text-green {
+  color: #70cf84;
+}
+
+@media screen and (max-width: 576px) {
+  :root {
+    font-size: 14px;
+  }
+}
